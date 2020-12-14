@@ -38,5 +38,14 @@ export class RecipeService {
     return this.recipes.slice();
   }
 
+  getRecipe(id: string): Recipe {
+    const recipeIndex = this.recipes.findIndex(x => x.id === id);
+    if (recipeIndex != -1) {
+      return this.recipes.slice(recipeIndex)[0];
+    } else {
+      throw new Error("Recipe with id " + id + " doesn't exist");
+    }
+  }
+
   constructor() {}
 }
