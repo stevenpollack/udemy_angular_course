@@ -2,12 +2,7 @@
 <div class="container">
   <div class="row">
     <div class="col-md-12">
-      <div *ngIf="activeSection === 'recipes' else shoppingList">
-        <app-recipes></app-recipes>
-      </div>
-      <ng-template #shoppingList>
-        <app-shopping-list></app-shopping-list>
-      </ng-template>
+      <router-outlet></router-outlet>
     </div>
   </div>
 </div>

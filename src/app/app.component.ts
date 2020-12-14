@@ -9,7 +9,7 @@ export class AppComponent implements OnChanges {
   activeSection: string;
 
   parseNav(eventData: string) {
-    this.activeSection = eventData;
+    //this.activeSection = eventData;
     //this.ngOnChanges();
   }
 

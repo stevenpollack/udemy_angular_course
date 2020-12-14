@@ -11,7 +11,8 @@ export class RecipeService {
       'Chicken Tikka Masala',
       'A yummy Indian dish',
       'https://www.closetcooking.com/wp-content/uploads/2019/11/Chicken-Tikka-Masala-1200-8412.jpg',
-      [new Ingredient('Chicken', 1), new Ingredient('Tikka Masala Spice', 1)]
+      [new Ingredient('Chicken', 1), new Ingredient('Tikka Masala Spice', 1)],
+      '1'
     ),
     new Recipe(
       'Biscuits & Gravy',
@@ -21,7 +22,8 @@ export class RecipeService {
         new Ingredient('Biscuits', 5),
         new Ingredient('Chicken', 1),
         new Ingredient('Flour', 1),
-      ]
+      ],
+      '2'
     ),
   ];
 
